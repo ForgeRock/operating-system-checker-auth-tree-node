@@ -1,0 +1,4 @@
+org/forgerock/openam/auth/nodes/OSCollectorNodePlugin.class
+org/forgerock/openam/auth/nodes/OSCollectorNode$Config.class
+org/forgerock/openam/auth/nodes/OSCollectorNode.class
+org/forgerock/openam/auth/nodes/OSCollectorNode$OutcomeProvider.class
