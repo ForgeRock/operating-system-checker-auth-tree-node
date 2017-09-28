@@ -59,7 +59,7 @@ public class OSCollectorNode implements Node {
     public Action process(TreeContext context) throws NodeProcessException {
 	
 	//Pull user-agent out of headers
-	List<String> userAgent = context.headers.get("User-Agent");
+	List<String> userAgent = context.request.headers.get("User-Agent");
 	logger.info("OSCollectorNode user-agent found: " + userAgent);
 
 	//If no user-agent present at all        
