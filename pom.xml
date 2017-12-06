@@ -22,7 +22,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>operating-system-os-checker-node</artifactId>
+    <artifactId>operating-system-checker-auth-tree-node</artifactId>
     <groupId>org.forgerock.am</groupId>
     <version>5.5.0</version>
     
