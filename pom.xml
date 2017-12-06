@@ -24,7 +24,7 @@
 
     <artifactId>operating-system-checker-auth-tree-node</artifactId>
     <groupId>org.forgerock.am</groupId>
-    <version>5.5.0</version>
+    <version>6.0.0-SNAPSHOT</version>
     
     <name>OS Checker Authentication Node</name>
     <description>An Authentication Tree Node for ForgeRock's Identity Platform</description>
