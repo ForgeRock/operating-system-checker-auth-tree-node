@@ -22,7 +22,7 @@ Copy the .jar file from the ../target directory into the ../web-container/webapp
 ## Usage
 The node provides 7 outcomes: Windows, Linux, Mac, Android, iPhone, WinPhone and Other.
 
-To import the sample tree, Test_OS-Collector.json, use the amtree.sh. Use describeTree to see required nodes and LDAP attributes. 
+To import the sample tree, Test_OS-Collector.json, use the [amtree.sh script](https://github.com/vscheuber/AM-treetool). Use [describeTree](https://drive.google.com/open?id=1iMROXUBD2n3KbYX7z3b0XqDfbGn-hnUF) to see required nodes and LDAP attributes. describeTree.sh is planned to be incorporated into amtree.sh. 
 
 ## To Build
 
