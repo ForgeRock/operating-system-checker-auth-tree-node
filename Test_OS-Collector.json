@@ -1,0 +1,135 @@
+
+{
+  "origin": "fa1f1a9fe924e0e4f858f95ec9deea24",
+  "innernodes": {},
+  "nodes": {
+    "5B5E9BC1-5FB4-4A73-BC54-AB4F67A90FD9": {
+      "_id": "5B5E9BC1-5FB4-4A73-BC54-AB4F67A90FD9",
+      "transientState": false,
+      "_type": {
+        "_id": "DebugNode",
+        "name": "Debug Node",
+        "collection": true
+      }
+    },
+    "63373B26-4156-4165-97DB-6D0DA3F91DF8": {
+      "_id": "63373B26-4156-4165-97DB-6D0DA3F91DF8",
+      "messageYes": {
+        "en": "OK"
+      },
+      "messageNo": {},
+      "message": {
+        "en": "Detected Mac"
+      },
+      "_type": {
+        "_id": "MessageNode",
+        "name": "Message Node",
+        "collection": true
+      }
+    },
+    "82197E3A-3526-4C5E-B269-5E5904311D87": {
+      "_id": "82197E3A-3526-4C5E-B269-5E5904311D87",
+      "messageYes": {
+        "en": "ok"
+      },
+      "messageNo": {},
+      "message": {
+        "en": "Other node type"
+      },
+      "_type": {
+        "_id": "MessageNode",
+        "name": "Message Node",
+        "collection": true
+      }
+    },
+    "C1C37737-29CD-4B3E-8AF6-AF5B606C3484": {
+      "_id": "C1C37737-29CD-4B3E-8AF6-AF5B606C3484",
+      "_type": {
+        "_id": "UsernameCollectorNode",
+        "name": "Username Collector",
+        "collection": true
+      }
+    },
+    "E693DD20-F3C4-4F69-B0F4-FD2D5A1DF1DC": {
+      "_id": "E693DD20-F3C4-4F69-B0F4-FD2D5A1DF1DC",
+      "messageYes": {
+        "en": "OK"
+      },
+      "messageNo": {},
+      "message": {
+        "en": "Detected IoS"
+      },
+      "_type": {
+        "_id": "MessageNode",
+        "name": "Message Node",
+        "collection": true
+      }
+    },
+    "F9680559-D577-4F57-AEFE-93773E907CC5": {
+      "_id": "F9680559-D577-4F57-AEFE-93773E907CC5",
+      "_type": {
+        "_id": "OSCollectorNode",
+        "name": "Operating System Collector",
+        "collection": true
+      }
+    }
+  },
+  "scripts": {},
+  "tree": {
+    "_id": "Test_OS-Collector",
+    "nodes": {
+      "F9680559-D577-4F57-AEFE-93773E907CC5": {
+        "displayName": "Operating System Collector",
+        "nodeType": "OSCollectorNode",
+        "connections": {
+          "iPhone": "E693DD20-F3C4-4F69-B0F4-FD2D5A1DF1DC",
+          "Linux": "82197E3A-3526-4C5E-B269-5E5904311D87",
+          "Windows": "82197E3A-3526-4C5E-B269-5E5904311D87",
+          "Android": "82197E3A-3526-4C5E-B269-5E5904311D87",
+          "WinPhone": "82197E3A-3526-4C5E-B269-5E5904311D87",
+          "Other": "82197E3A-3526-4C5E-B269-5E5904311D87",
+          "Macintosh": "63373B26-4156-4165-97DB-6D0DA3F91DF8"
+        }
+      },
+      "5B5E9BC1-5FB4-4A73-BC54-AB4F67A90FD9": {
+        "displayName": "Debug Node",
+        "nodeType": "DebugNode",
+        "connections": {
+          "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+        }
+      },
+      "63373B26-4156-4165-97DB-6D0DA3F91DF8": {
+        "displayName": "Message Mac",
+        "nodeType": "MessageNode",
+        "connections": {
+          "true": "5B5E9BC1-5FB4-4A73-BC54-AB4F67A90FD9",
+          "false": "5B5E9BC1-5FB4-4A73-BC54-AB4F67A90FD9"
+        }
+      },
+      "E693DD20-F3C4-4F69-B0F4-FD2D5A1DF1DC": {
+        "displayName": "Message IoS",
+        "nodeType": "MessageNode",
+        "connections": {
+          "true": "5B5E9BC1-5FB4-4A73-BC54-AB4F67A90FD9",
+          "false": "5B5E9BC1-5FB4-4A73-BC54-AB4F67A90FD9"
+        }
+      },
+      "82197E3A-3526-4C5E-B269-5E5904311D87": {
+        "displayName": "Message other",
+        "nodeType": "MessageNode",
+        "connections": {
+          "true": "5B5E9BC1-5FB4-4A73-BC54-AB4F67A90FD9",
+          "false": "5B5E9BC1-5FB4-4A73-BC54-AB4F67A90FD9"
+        }
+      },
+      "C1C37737-29CD-4B3E-8AF6-AF5B606C3484": {
+        "displayName": "Username Collector",
+        "nodeType": "UsernameCollectorNode",
+        "connections": {
+          "outcome": "F9680559-D577-4F57-AEFE-93773E907CC5"
+        }
+      }
+    },
+    "entryNodeId": "C1C37737-29CD-4B3E-8AF6-AF5B606C3484"
+  }
+}
