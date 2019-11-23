@@ -28,7 +28,8 @@ import java.util.ResourceBundle;
 
 import javax.inject.Inject;
 
-import org.forgerock.guava.common.collect.ImmutableList;
+import com.google.common.collect.ImmutableList;
+
 import org.forgerock.json.JsonValue;
 import org.forgerock.openam.annotations.sm.Attribute;
 import org.forgerock.openam.auth.node.api.Action;
